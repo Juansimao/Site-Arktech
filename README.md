@@ -1,3 +1,3 @@
 # Site-Arktech
- Site feito a partir do HTML e CSS. 
 
+Site feito com html e css sendo responsivo.
