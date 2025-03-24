@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../Assets/icon.png" />
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+        <title>Ark Tech</title>
+
+        <style>
+*{
+    padding: 0;
+    margin:0%;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+ /*-------------------global css-------------------------------------- */
+
+
+body, html{
+    font-size: 62.5%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+header{
+    background-color: #F7F9F9;
+}
+main{
+    background-image: linear-gradient(#2b2e35, #4e4f51);
+}
+footer{
+    background-color: #2b2e35;
+}
+.AvaliacaoMobile{
+    display: none;
+}
+#SpanAvaliacoes{
+    display: none;
+}
+
+ /*-------------------Header css-------------------------------------- */
+
+.headerContainer{
+    width: 74.5%;
+    height: 7rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.containerlogo{
+    width: 30%;
+}
+.containerlogo h1{
+    font-size: 3.5rem;
+    letter-spacing: 0.20rem;
+    color: #3498DB;
+    transition: 0.3S;
+}
+.containerlogo h1:hover{
+    color: #3f6bc5;
+}
+.menucontainer{
+    justify-content: end;
+    margin-right: 2rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.menucontainer nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.menucontainer nav ul li a{
+    text-decoration: none;
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    color: #2b2e35;
+}
+.menucontainer nav ul li a:hover{
+    border-bottom: 2px solid #0084ff;
+    margin-left: 5rem;
+    padding-left: 0;
+    padding-bottom: 2.2rem;
+    }
+.botaomenuPC{
+    width: auto;
+}
+.botaomenuPC button{
+    border-radius: 100px;
+    margin-left: 4rem;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem ;
+    background-color: #6fbdfa;
+    border: 1px solid #6fbdfa;
+}
+.botaomenuPC button:hover{
+    background-color: #faef27;
+    zoom: 102%;
+    cursor: pointer;
+}
+
+
+ /*-------------------Section1 css-------------------------------------- */
+
+
+section .section1{
+    display: flex;
+}
+
+.sectioncontainer{
+    width: 92%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.ContainerBanner{
+    width: 100%;
+    height: 150%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.ContainerBanner img{
+    width: 66%;
+    height: 80vh;
+}
+.textBanner{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    line-height: 3rem;
+    padding-left: 35px;
+}
+.textBanner h2{
+    color: #ffffffc0;
+    font-size: 2.7rem;
+    text-align: left;
+}
+.textBanner h2 span{
+    color: #ffffffc0;
+    font-size: 4rem;
+    text-align: left;
+}
+.Botaobanner{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    line-height: 3rem;
+    padding-left: 35px;
+}
+.Botaobanner button{
+    width: 350px;
+    height: 60px;
+    border-radius: 100px;
+    color: #ffffffc0;
+    background-color: #3498DB;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 0;
+}
+.Botaobanner button:hover{
+    cursor: pointer;
+    zoom: 110%;
+}
+.trapezio{
+    width: 1.2%;
+    height: 100%;
+    top: 0;
+    -webkit-transform: skew(9deg);
+    -moz-transform: skew(9deg);
+    -o-transform: skew(9deg);
+    background: linear-gradient(#2b2e35, #3f4145);
+    z-index: 5;
+    left: 56.2%;
+    position: absolute;
+}
+.imagemLadobanner{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 57%;
+    position: absolute;
+    -webkit-transform: skew(9deg);
+}
+.imagemLadobanner img{
+    width: 100%;
+    height: 80vh;
+}
+
+ /*-------------------Section2 css-------------------------------------- */
+
+.section2{
+    display: flex;
+    height: 52rem;
+}
+.containerAvaliacoes{
+    border: 1px solid black;
+    width: 62%;
+    margin-right: 1.2rem;
+    border-radius: 25px;
+    background-color: #1e1e1e;
+    overflow:hidden;
+}
+#AvaliacaoPC{
+    color: #ffffffc0;
+    font-size: 3.2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.containerforms{
+    text-align: center;
+}
+.containerradio{
+    display: flex;
+    color: #ffffffc0;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.containerradio input{
+    margin-left: 1.4rem;
+    margin-right: 0.3rem;
+}
+.name input{
+    width: 36%;
+    text-align: center;
+}
+.Input3{
+    width: 27%;
+    padding-left: 1rem;
+    border: 3px solid #3498DB;
+    border-right: 3px solid #3498DB;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.Input4{
+    margin-left: -2px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 3px solid #3498DB;
+    border-left: none;
+    padding: 0 1rem 0 1rem;
+    background-color: #3498DB;
+    color: #F7F9F9;
+    font-weight: 500;
+    cursor: pointer;
+}
+.containerpessoas{
+    width: 80%;
+    background-color: #ffffffc0;
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: 22rem;
+}
+.containerpessoas::-webkit-scrollbar {
+    width: 15px;
+}
+.containerpessoas::-webkit-scrollbar-track {
+    background: linear-gradient(#2b2e35, #3f4145);
+}
+.containerpessoas::-webkit-scrollbar-thumb {
+    background: #3498DB;
+    border-radius: 50px;
+}
+.ContainerIconeNomeTexto{
+    display: flex;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+.ImgAvatar{
+    width: 70px;
+    margin-left: 2rem;
+}
+.ContainericoneNome p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+.ComentarioIcone{
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+.contaienerVideo2{
+    width: 38%;
+}
+.contaienerVideo2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+ /*-------------------Footer css-------------------------------------- */
+ .footercontainer{
+    width: 96.7%;
+    margin: 0 auto;
+}
+
+.containerflex{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.atendimentos a, .empresa a{
+    color: #ffffffc0;
+    font-size: 1.4rem;
+    text-decoration: none;
+    line-height:2rem;
+}
+.atendimentos H4, .empresa H4{
+    font-size: 2.1rem;
+    color:#ffffffc0;
+    padding-top: 1rem;
+}
+.empresa a:hover{
+    text-decoration:underline;
+    color: #3498DB;
+}
+.atendimentos a:hover{
+    text-decoration:underline;
+    color: #3498DB;
+}
+.Contatosblock{
+    display: flex;
+    width: 38.9%;
+    justify-content:end;
+}
+.Contatosblock a img{
+    width: 3.5rem;
+    padding-left: 0.8rem;
+}
+.ContainerLinguagem{
+    width: 100%;
+    height: 4rem;
+    text-align: end;
+}
+.ContainerLinguagem p{
+    color: #ffffffc0;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+
+ /*-------------------Global < 880px-------------------------------------- */
+
+
+@media (min-width: 880px){
+    .BotaoClientesMobile{
+        display: none;
+   }
+    .AvaliacaoMobile h3{
+        display: none;
+   }
+}
+
+ /*-------------------Telas 5/4------------------------------------------- */
+
+@media (aspect-ratio:5/4){
+    .trapezio{
+        left: 55.2%;
+   }
+    .imagemLadobanner{
+        left: 55.2%;
+        width: 55%;
+   }
+}
+
+/*-------------------Telas 16/10------------------------------------------- */
+
+@media (aspect-ratio:16/10){
+    .trapezio{
+        left: 56.5%;
+   }
+    .imagemLadobanner{
+        left: 56.5%;
+        width: 55%;
+   }
+}
+
+/*-------------------Telas 16/9------------------------------------------- */
+
+@media (aspect-ratio:16/9){
+    .trapezio{
+        left: 56.9%;
+   }
+    .imagemLadobanner{
+        left: 56.9%;
+        width: 55%;
+   }
+}
+
+/*-------------------Telas entre 650px a 880px---------------------------- */
+
+@media only screen and (max-width: 880px) and (min-width: 650px) {
+    .containerflex{
+        width: 90%;
+        justify-content:space-between;
+        padding: 0 3rem 0 2rem;
+   }
+    .Contatosblock{
+        justify-content: flex-start;
+        margin-left: 1.8%;
+        margin-top: 2%;
+   }
+    .headerContainer{
+        width: 90%;
+        height: 10rem;
+        margin: 0 auto;
+   }
+    .section2{
+        height: 42rem;
+   }
+    .BotaoClientesMobile{
+        display: none;
+   }
+    .AvaliacaoMobile h3{
+        display: none;
+   }
+    .ContainerBanner img{
+        height: 130%;
+        width: 130%;
+   }
+    .imagemLadobanner img{
+        width: 110%;
+        height: 100%;
+   }
+    .imagemLadobanner{
+        left: 55%;
+        height: 99.9%;
+   }
+    .trapezio{
+        left: 53.5%;
+        width: 1.5%;
+   }
+    .textBanner h2 span{
+        font-size: 4vw;
+   }
+    .textBanner h2{
+        font-size: 3vw;
+   }
+   .Botaobanner{
+       top: 50%;
+   }
+   .Botaobanner button{ 
+    width: 40vw;
+}
+}
+
+
+/*-------------------Telas MOBILE------------------------------------------- */
+
+
+
+@media (max-width: 650px){
+    .Contatosblock{
+        display: none;
+   }
+    .containerforms{
+        display: none;
+   }
+    .containerpessoas p{
+        display: none;
+   }
+    #AvaliacaoPC{
+        display: none;
+   }
+    .headerContainer{
+        width: 90%;
+        height: 11rem;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-content: flex-start 
+   }
+    .menucontainer{
+        width: 100%;
+        justify-content:flex-start;
+   }
+    .FirstTextMenu{
+        margin: -15px;
+        padding-right: 15px;
+   }
+    .containerlogo{
+        width: 100%;
+        display: block;
+        padding-top: 2rem;
+   }
+    .headerContainer nav ul li a{
+        padding-left: 18px;
+   }
+    .botaomenuPC{
+        width: 100rem;
+        margin-left: -2rem;
+   }
+    .section1{
+        padding-bottom: 5px;
+   }
+    .ContainerBanner img{
+        height: 130%;
+        width: 130%;
+   }
+    .imagemLadobanner img{
+        width: 110%;
+        height: 100%;
+   }
+    .imagemLadobanner{
+        left: 55%;
+        height: 99.5%;
+   }
+    .textBanner h2 span{
+        font-size: 4.4vw;
+   }
+    .textBanner h2{
+        font-size: 3.4vw;
+   }
+    .textBanner{
+        top: 30%;
+        line-height: 4vw;
+        padding-left: 10px;
+        width: 52%;
+   }
+    .Botaobanner{
+        top: 60%;
+        padding-left: 10px;
+   }
+    .Botaobanner button{
+        width: 42vw;
+        height: 40px;
+        padding: 2px 10px 2px 10px;
+        font-size: 1.4rem;
+        font-weight: 500;
+   }
+    .trapezio{
+        left: 54%;
+        width: 1.5%;
+   }
+    .textBanner h2{
+        font-size: 3.4vw;
+   }
+    .section2{
+        height: 28rem;
+        padding-bottom: 0.6rem;
+   }
+    .containerAvaliacoes{
+        border-radius: 0;
+        margin-right: 0.6rem;
+   }
+    .AvaliacaoMobile{
+        display: block;
+        font-size: 2.1rem;
+        color: #ffffffc0;
+        text-align: center;
+        padding-top: 1rem;
+   }
+    #SpanAvaliacoes{
+        display: block;
+        color: #ffffffc0;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-weight: 500;
+   }
+    .containerpessoas{
+        height: 18rem;
+        overflow-y:hidden;
+        margin-top: 0;
+   }
+    .BotaoClientesMobile{
+        text-align: center;
+        padding-top: 7rem;
+   }
+    .BotaoClientesMobile button{
+        padding: 0.8rem 3rem 0.8rem 3rem;
+        background-color: #3498DB;
+        border: 1px solid #3498DB;
+        border-radius: 25px;
+        color:#ffffffc0; 
+   }
+    .atendimentos h4, .empresa h4, .ContainerIconeNomeTexto{
+        display: none;
+   }
+    .containerflex{
+        width: 93%;
+        justify-content:space-between;
+        padding: 1.5rem 0 2rem 2rem;
+   }
+    .atendimentos a, .empresa a{
+        font-size: 1.1rem;
+   }
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <header class="Main">
+            <div class="headerContainer">
+                <div class="containerlogo">
+                    <h1> Ark Tech</h1>
+                </div>
+                <div class="menucontainer">
+                    <nav>
+                        <ul>
+                            <li><a class="FirstTextMenu" href="https://www.instagram.com/juansimao_/">Home</a></li>
+                            <li><a href="https://www.instagram.com/juansimao_/">Sobre</a></li>
+                            <li><a href="https://www.instagram.com/juansimao_/">Portifólio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="botaomenuPC">
+                        <button type="button">Contrate-nos</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="sectioncontainer section1" >
+                    <div class="ContainerBanner">
+                        <img src="../Assets/Banner.jpeg" alt="Programacao WEB">
+                        <div class="textBanner">
+                            <h2><span>Construa o seu lugar</span></br>na web conosco</br>Hoje Mesmo!</h2>
+                        </div>
+                        <div class="Botaobanner"><button type="button">Faça seu site na Ark</button> </div>
+                        <div class="trapezio"></div>
+                        <div class="imagemLadobanner"><img src="../Assets/play.jpeg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sectioncontainer section2">
+                    <div class="containerAvaliacoes">
+                        <h3 class="AvaliacaoMobile">Avalie nosso serviço</h3>
+                        <p id="SpanAvaliacoes">Avaliações dos clientes</p>
+                        <h3 id="AvaliacaoPC">Avalie nosso serviço</h3>
+                        <div class="containerforms">
+                            <form>
+                                <div class="containerradio">
+                                    <input type="radio" id="Outro" name="fav_language" value="Outro">
+                                    <label for="html">Outro</label><br>
+                                    <input type="radio" id="Masculino" name="fav_language" value="Masculino">
+                                    <label for="Masculino">Masculino</label><br>
+                                    <input type="radio" id="Feminino" name="fav_language" value="Feminino">
+                                    <label for="Feminino">Feminino</label>
+                                </div>
+                                <div class="name">         
+                                    <input type="text" value="" placeholder="Seu nome" >
+                                </div>
+                                <br>
+                                <div>         
+                                    <input class="Input3" type="text" value="" placeholder="Digite aqui sua avaliação" >
+                                    <input Class="Input4"type="submit" value="Enviar">
+                                </div>
+                            </form>
+                        </div>
+                        <br>
+                        <div class="containerpessoas">
+                            <div class="BotaoClientesMobile"><button type="button">Veja mais</button></div>
+                            <div class="ContainerIconeNomeTexto">
+                                <div Class="ContainericoneNome">
+                                    <p>Luana Alves</p>
+                                    <img class="ImgAvatar" src="../Assets/IconeMuher.png" alt="Avatar mulher">
+                                </div>
+                                <div Class="ComentarioIcone">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt aliquam animi aliquid temporibus quas magnam odit ab.</p>
+                                </div>
+                            </div>
+                            <div class="ContainerIconeNomeTexto">
+                                <div Class="ContainericoneNome">
+                                    <p>Luana Alves</p>
+                                    <img class="ImgAvatar" src="../Assets/IconeMuher.png" alt="Avatar mulher">
+                                </div>
+                                <div Class="ComentarioIcone">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt aliquam animi aliquid temporibus quas magnam odit ab.</p>
+                                </div>
+                            </div>
+                            <div class="ContainerIconeNomeTexto">
+                                <div Class="ContainericoneNome">
+                                    <p>Luana Alves</p>
+                                    <img class="ImgAvatar" src="../Assets/IconeMuher.png" alt="Avatar mulher">
+                                </div>
+                                <div Class="ComentarioIcone">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt aliquam animi aliquid temporibus quas magnam odit ab.</p>
+                                </div>
+                            </div>
+                            <div class="ContainerIconeNomeTexto">
+                                <div Class="ContainericoneNome">
+                                    <p>Luana Alves</p>
+                                    <img class="ImgAvatar" src="../Assets/IconeMuher.png" alt="Avatar mulher">
+                                </div>
+                                <div Class="ComentarioIcone">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt aliquam animi aliquid temporibus quas magnam odit ab.</p>
+                                </div>
+                            </div>
+                            <div class="ContainerIconeNomeTexto">
+                                <div Class="ContainericoneNome">
+                                    <p>Luana Alves</p>
+                                    <img class="ImgAvatar" src="../Assets/IconeMuher.png" alt="Avatar mulher">
+                                </div>
+                                <div Class="ComentarioIcone">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt aliquam animi aliquid temporibus quas magnam odit ab.</p>
+                                </div>
+                            </div>
+                            <div class="ContainerIconeNomeTexto">
+                                <div Class="ContainericoneNome">
+                                    <p>Luana Alves</p>
+                                    <img class="ImgAvatar" src="../Assets/IconeMuher.png" alt="Avatar mulher">
+                                </div>
+                                <div Class="ComentarioIcone">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt aliquam animi aliquid temporibus quas magnam odit ab.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contaienerVideo2">
+                        <img src="../Assets/ProgramingMobile.gif" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="Main">
+            <div class="footercontainer">
+                <div class="containerflex">
+                    <div class="atendimentos">
+                        <h4><b>Atendimentos</b></h4>
+                        <br>
+                        <a href="#">Precisa de ajuda?</a>
+                        <br>
+                        <a href="#">Politica de Cookies</a>
+                        <br>
+                        <a href="#">Seguranças</a>
+                        <br>
+                        <a href="#">Politica de termos de uso</a>
+                    </div>
+                    <div class="empresa">
+                        <h4>Empresa</h4>
+                        <br>
+                        <a href="#">Desenvolvimentos</a>
+                        <br>
+                        <a href="#">Parceiros</a>
+                        <br>
+                        <a href="#">Quem somos?</a>
+                    </div>
+                </div>
+                <div class="Contatosblock">
+                    <a href="https://instagram.com/arktechdevcenter?utm_medium=copy_link"><img src="../Assets/instagram.png" alt="Acesse nosso instagram"></a>
+                    <a href="https://instagram.com/arktechdevcenter?utm_medium=copy_link"><img src="../Assets/600px-Facebook_logo_(square).webp" alt="Acesse nosso instagram"></a>
+                    <a href="https://instagram.com/arktechdevcenter?utm_medium=copy_link"><img src="../Assets/i489929.webp" alt="Acesse nosso instagram"></a>
+                </div>
+                <div class="ContainerLinguagem">
+                    <p>Português (Brasil)</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
